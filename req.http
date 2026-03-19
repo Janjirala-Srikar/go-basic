@@ -1,0 +1,30 @@
+### Get all employees
+GET http://localhost:8080/employees
+Content-Type: application/json
+
+
+### Create employee
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "role": "Developer"
+}
+
+
+### Update employee
+PUT http://localhost:8080/employees/1
+Content-Type: application/json
+
+{
+  "name": "Updated Name",
+  "email": "updated@example.com",
+  "role": "Manager"
+}
+
+
+### Delete employee
+DELETE http://localhost:8080/employees/1
+Content-Type: application/json
